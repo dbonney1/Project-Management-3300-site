@@ -1,0 +1,228 @@
+html, body {
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: lightgray;
+}
+main {
+    width: 90%;
+    margin: auto;
+}
+.main-description {
+    background-image: url("../images//pm-banner.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 900px;
+    width: 100%;
+    color: white;
+    text-align: center;
+    vertical-align: center;
+    position: relative;
+}
+
+
+
+.main-description-top {
+    position: absolute;
+    top: 0;
+    left: 20px;
+}
+
+.main-description-bottom {
+    position: absolute;
+    bottom: 220px;
+    right: 20px;
+}
+.main-description h1, h2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: calc(20px + 2.5vw);
+}
+
+.vert {
+    display: flex;
+    background-color: black;
+    flex-direction: column;
+    justify-items: flex-start;
+    padding: 0;
+    overflow: hidden;
+}
+.horiz {
+    width: 100%;
+    background-color: black;
+    height: 50px;
+    padding: 0 40px;
+    overflow: hidden;
+}
+
+.horiz ul,
+.horiz ul li {
+    display: inline-block;
+    margin: 0;
+    padding-right: 20px;
+    list-style: none;
+}
+
+.horiz a {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: inline-block;
+    padding: 0 50px;
+    line-height: 50px;
+    font-size: 1.6em;
+    text-decoration: none;
+    color: #ffffee;
+    margin: 0;
+}
+
+
+.vert ul li a:hover {
+    background-color: white;
+    color: black;
+}
+
+.vert ul,
+.vert ul li {
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.vert a {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: block;
+    padding: 0;
+    line-height: 50px;
+    font-size: 1.6em;
+    text-decoration: none;
+    color: #ffffee;
+    margin: 0;
+    text-align: center;
+}
+
+.horiz .active, .vert .active {
+    font-weight: bolder;
+}
+.horiz ul li a:hover {
+    background-color: white;
+    color: black;
+}
+.horiz .icon {
+    display: none;
+}
+.logo {
+    position: absolute;
+    left: 10px;
+    height: 40px;
+    margin-top: 5px;
+}
+
+.hide {
+    display: none;
+} 
+  /* Style the links inside the navigation bar
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  /* nav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add an active class to highlight the current page */
+  /* nav a.active {
+    background-color: #4CAF50;
+    color: white; */
+ 
+  
+ 
+.main-container {
+    min-width: 400px;
+    margin-bottom: 25px;
+    height: 500px;
+    padding: 0;
+    background-color: white;
+}
+.main-left-top {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    float: left;
+    width: 50%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.main-left-top h1 {
+    font-size: 3em;
+}
+.main-left-top h2 {
+    font-size: 2em
+}
+.feature-img {
+    display: block;
+    width: 95%;
+    height: 60%;
+    margin: auto;
+    margin-top: 20px;
+    padding: 0;
+}
+
+.main-right-top {
+    float: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 50%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.main-right-list-item {
+    max-height: 100px;
+    line-height: 90px;
+    background-image: linear-gradient(white, rgb(209, 209, 209));
+    font-size: 2em;
+    flex: 0 1 20%;
+    margin-right: 20px;
+    border: 1px solid black;
+    box-shadow: 5px 10px;
+}
+.main-right-list-item img {
+    min-width: 90px;
+    width: 15%;
+    height: 100%;
+    margin-right: 50px;
+    float: left;
+}
+ /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+ @media screen and (max-width: 650px) {
+    .horiz ul li a {display: none;}
+    .horiz ul a.icon {
+      position: absolute;
+      right: 0px;
+      top: 0px;
+      display: block;
+    }
+  }
+  
+  @media screen and (min-width: 651px) {
+      .vert {display: none;}
+  }
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  @media screen and (max-width: 650px) {
+    nav.responsive {position: relative;}
+
+    nav.responsive ul li, nav.response ul li a {
+      display: block;
+    }
+  } 
