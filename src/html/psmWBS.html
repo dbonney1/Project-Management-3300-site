@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/main-style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>In Good Taste - A Project Management Primer</title>
+  </head>
+  <body>
+    <div class="horiz" id="topNav">
+      <div id="logo-banner">
+        <img class="logo" src="../images/goodtastelogo2.png" />
+      </div>
+      <ul>
+        <li><a class="active" href="/">Home</a></li>
+        <li><a href="/">About</a></li>
+        <li><a href="/">Table of Contents</a></li>
+        <li>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()"
+            ><i class="fa fa-bars"></i
+          ></a>
+        </li>
+      </ul>
+    </div>
+    <div class="vert hide" id="topNav-vert">
+      <ul>
+        <li><a class="active" href="/">Home</a></li>
+        <li><a href="/">About</a></li>
+        <li><a href="/">Table of Contents</a></li>
+      </ul>
+    </div>
+
+    <main class="article-main">
+      <h1>Project Scope Management: The Work Breakdown Structure</h1>
+      <h2>Table of Contents</h2>
+      <a href="#introduction">Intro</a>
+      <a href="#work-breakdown-structures">Work Breakdown Structures</a>
+      <a href="#deliverable-phase">Deliverable-based and Phase-based Approaches</a>
+      <a href="#deliverable">Deliverable-based</a>
+      <a href="#phase">Phase-based</a>
+      <a href="#approaches">WBS Development Approaches</a>
+      <a href="#top-down">The Top-Down Approach</a>
+      <a href="#bottom-up">The Bottom-Up Approach</a>
+      <a href="#mind-mapping">The Mind-Mapping Approach</a>
+      <a href="#wrap-up">Wrap-Up</a>
+      <h2 id="introduction">Introduction</h2>
+      <p>
+        Project management can be a foreboding and mysterious domain, even during a project’s inception phase. 
+        If you’ve previously been in the shoes of a project manager, you’re likely aware that you must remain 
+        vigilant and considerate of a project’s scope, which comprises 100% of the labor required to satisfy 
+        project requirements that will ultimately transmute these abstract ideas into a functional product. 
+        It’s imperative for both existing and prospective project managers to know that successfully creating 
+        the bridge between requirements and the corresponding task assignments is no easy task.
+      </p>
+      <h2 id="work-breakdown-structures">Work Breakdown Structures</h2>
+      <p>
+        An indispensable methodology used to form this elusive bridge is the Work Breakdown Structure (WBS). A WBS is effectively a map of descriptive tasks that mirror all the work necessary to complete the project. There is no necessarily definitive nor optimal way to create a WBS for your project, and it frequently depends on the nature of the project and related environmental factors. One of the most common forms that a WBS can adopt involves a layered tree-like structure, with higher layers resembling “the big picture” of the project that will be created, and lower, subsidiary layers representing microtasks that must be completed, in the form of project deliverables, in order to satisfy the parent layers’ objectives. Depending on the scope of each task, a single task could have sub-tasks, and those sub-tasks could have sub-tasks of their own. A less technical example of a WBS tree can be seen below.
+      </p>
+      <div class="figure">
+        <img src="../images/wbs-graphical-2.png">
+        Figure 1
+      </div>
+      <div>
+        <p>
+          As you can see, this WBS states the ultimate goal of the project at the root: plant a tree. Of course, a series of steps is involved in accomplishing this objective:
+        </p>
+        <ul class="article-list">
+          <li>Preparation</li>
+          <li>Construction</li>
+          <li>Finishing</li>
+        </ul>
+        <p>   
+          These tasks will completely fulfill the goal of planting a tree, and they make up the second layer of the project’s WBS; as you might possibly guess, this layer makes up 100% of the project scope. Each task is certainly more descriptive than the overarching goal of planting a tree; however, they do not sufficiently paint a picture of the work required to realize the project. You’ll likely find this to be the case when you create your own WBS diagrams; if a task is not explicit enough in stating what needs to be done, it’s likely that you need to think of subsidiary microtasks. Just as all the tasks involved in the second layer make up 100% of the scope of the root layer, all of a particular task’s microtasks should make up 100% of its scope. 
+          You can see that this is the case in the tree-planting scenario:
+        </p>
+        <ul class="article-list">
+          <li>Preparation
+            <ul>
+              <li>Remove old tree</li>
+            </ul>
+          </li>
+          <li>Construction
+              <ul>
+                <li>Dig hole</li>
+                <li>Plant new tree</li>
+              </ul>
+          </li>
+          <li>Finishing
+            <ul>
+              <li>Landscaping</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <h2 id="deliverable-phase">Deliverable-based and phase-based</h2>
+      <p>
+        While the Project Management Book of Knowledge (PMBOK) describes a WBS as a deliverable-oriented document, a WBS can be designed as a deliverable-based or phase-based decomposition of the project, depending on project circumstances. 
+      </p>
+      <h3 id="deliverable">Deliverable-based</h3>
+      <p>
+        A deliverable-based WBS is the most commonly used WBS, where a project goal is decomposed into a set of deliverables representing the features or products that must be created to make the entire project. 
+      </p>
+      <h3>When should this approach be used?</h3>
+      <p>
+        Generally, outside of specific use cases, deliverable-oriented WBS models should be used for most software projects, where most features and activities can be broken up into microtasks accomplished asynchronously. This approach is focused on the outcomes that should be achieved from finishing each microtask.
+      </p>
+      <h3 id="phase">Phase-based</h3>
+      <p>
+        A phase-based WBS sets up the second layer so all of the phases of a given project are included; a prime example of such a WBS is the tree-planting scenario shown above in Figure 1, which shows a sequence of phases representing each synchronous step of the project. In the context of a software project, this would likely include the major project management phases spanning everything from the initial planning phase to the closing phase. 
+      </p>
+      <h3>When should this approach be used?</h3>
+      <p>
+        Generally, phase-based structures should be used when each task can only be accomplished synchronously, and future phases cannot be accomplished nor planned until progress is made on the project.
+      </p>
+      <p>
+        Of course, there are other structures that can be used for WBS models, such as responsibility-based and action-oriented, but deliverable-based and phase-based structures will cover the vast majority of cases. Ultimately, work breakdown structures are simply utilities that can be leveraged to simplify project scope management, and your WBS can be customized in a way that tailors to your own project’s circumstances.
+      </p>
+      <h2 id="approaches">WBS Development Approaches</h2>
+      <p>
+        As a project manager, you might assume that the only way to go about creating your WBS is through the decomposition of overarching goals/tasks/features; since it generally seems like a pragmatic approach to break down a project into manageable goals, and determine the constituents of those milestones. This procedure is more commonly known as the “top-down approach.” Contrary to what you may believe, there are several useful approaches to creating a WBS: the top-down approach, the bottom-up approach, and mind-mapping.
+      </p>
+      <h3 id="top-down">The Top-Down Approach</h3>
+      <p>
+        The top-down approach is the most commonly used approach to create a WBS; typically this approach involves defining and conceptualizing an image of the final product and decomposing this into the features and components necessary to realize the final product. Each of these can be decomposed even further to minimize the granularity of each task, but this must be done deliberately to ensure that the whole does not become lesser than the sum of its parts; in essence, the tasks should only continue to be broken down into smaller microtasks as long as they remain within the feature’s scope.
+      </p>
+      <h3>When should this approach be used?</h3>
+      <p>
+        The top-down approach is best applicable to situations where the implementation and design of certain features is ambiguous and not completely vivid; essentially, it should be used to characterize project features and the necessary work that will be involved in developing them. The specifics of these features will be defined at a later stage in development. 
+      </p>
+      <h3 id="bottom-up">The Bottom-Up Approach</h3>
+      <p>
+        The bottom-up approach is less common than the top-down approach, as it is a detail-oriented approach that requires a low-level understanding of the project’s requirements and potentially complex infrastructure. In order to develop a WBS with this approach, team members will identify granular deliverables/tasks required to complete a certain aspect of a project; these will be grouped into a layer and branch into a parent layer that defines them appropriately. As with the top-down approach, it’s essential that you ensure that each set of deliverables does not exceed the scope of the parent. Because the bottom-up approach is a details-oriented method, the team members can iteratively make design decisions as they determine the best way to group each set of microtasks in the grand scheme of the project and its constituent features. 
+      </p>
+      <h3>When should this approach be used?</h3>
+      <p>
+        The bottom-up approach is best applicable to situations where the project requirements are confidently understood, so that the team is able to design component features and unify them in a way that adheres to the requirements. Generally, if a team is unable to successfully group these tasks/deliverables together due to a misunderstanding of project requirements, it is likely that a top-down approach should be used instead.
+      </p>
+      <h3 id="mind-mapping">The Mind-Mapping Approach</h3>
+      <p>
+        While the previous two approaches to creating a WBS paint it as some rigid, ineffable structure, mind-mapping provides a more flexible format. While mind-mapping will not allow you to necessarily “escape” ultimately using a top-down or bottom-up approach, it can provide a more pleasing visual format that can be transformed into a more traditional structure. Mind-mapping can be used for both top-down and bottom-up approaches; in the former’s case, you would place the “big picture” in the center of the document, and radiate out into smaller features; whereas the detail-oriented bottom-up approach would place features at the edges of a document, slowly approaching an overarching goal in the center.
+      </p>
+      <h3>When should this approach be used?</h3>
+      <p>
+        Because mind-mapping simply incorporates the two aforementioned approaches, you must firstly consider the state of your project environment and your team’s understanding of the project requirements. Furthermore, if you suspect that mind-mapping would improve your team’s level of participation and motivation, and you want to introduce a creative aspect to a difficult stage of your project planning, mind-mapping just might be an approach to investigate. 
+      </p>
+      <h2 id="wrap-up">Wrap-Up</h2>
+      <p>
+        In conclusion, a WBS may sound like a simple idea in theory, but it’s quite apparent that this isn’t exactly the case with all of the methodologies and approaches that you can follow. As a project manager, you simply need to assess and synthesize your team’s understanding of the project requirements and your understanding of the different WBS models in order to make the most appropriate decisions for your particular project. Ultimately, a WBS can facilitate project scope management and help your team get an incredible boost in your professional projects.
+      </p>
+      <h3>Sources:</h3>
+      <a href="https://onlinepmcourses.com/create-wbs-with-a-mind-map/">https://onlinepmcourses.com/create-wbs-with-a-mind-map/</a>
+      <a href="https://www.projectmanagement.com.pk/work-breakdown-structure-approaches-methods-and-standards/">https://www.projectmanagement.com.pk/work-breakdown-structure-approaches-methods-and-standards/</a>
+      <a href="https://project-management.com/wbs-types-work-breakdown-structure/">https://project-management.com/wbs-types-work-breakdown-structure/</a>
+      <a href="https://www.visual-paradigm.com/tour/project-management/breakdown-structure-for-project-management.jsp">https://www.visual-paradigm.com/tour/project-management/breakdown-structure-for-project-management.jsp</a>
+      <a href="https://www.workbreakdownstructure.com/">https://www.workbreakdownstructure.com/</a>
+      <a href="https://www.pmi.org/learning/library/applying-work-breakdown-structure-project-lifecycle-6979#:~:text=WBS%20Concepts,total%20scope%20of%20the%20project.">https://www.pmi.org/learning/library/applying-work-breakdown-structure-project-lifecycle-6979#:~:text=WBS%20Concepts,total%20scope%20of%20the%20project.</a>
+      <a href="https://www.projectengineer.net/wp-content/uploads/2019/05/wbs-graphical-2.png">Figure 1 Source</a>
+      <a href=""></a>
+    </main>
+  </body>
+</html>
