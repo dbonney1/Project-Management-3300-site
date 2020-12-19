@@ -1,11 +1,23 @@
 {
   "name": "in_good_taste",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Devin Bonney",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dbonney1/In-Good-Taste-3300-Project-Management.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/dbonney1/In-Good-Taste-3300-Project-Management/issues"
+  },
+  "homepage": "https://github.com/dbonney1/In-Good-Taste-3300-Project-Management#readme",
+  "description": "",
+  "dependencies": {
+    "heroku": "^7.47.6"
+  }
 }
