@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/main-style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>In Good Taste - A Project Management Primer</title>
+  </head>
+  <body>
+    <div class="horiz" id="topNav">
+      <div id="logo-banner">
+        <img class="logo" src="../images/goodtastelogo2.png" />
+      </div>
+      <ul>
+        <li><a class="active" href="/">Home</a></li>
+        <li><a href="/">About</a></li>
+        <li><a href="/">Table of Contents</a></li>
+        <li>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()"
+            ><i class="fa fa-bars"></i
+          ></a>
+        </li>
+      </ul>
+    </div>
+    <div class="vert hide" id="topNav-vert">
+      <ul>
+        <li><a class="active" href="./index.html">Home</a></li>
+      </ul>
+    </div>
+
+    <main class="article-main">
+      <h1>Project Schedule Management: Managing Activity Dependencies</h1>
+      <h2>Table of Contents</h2>
+      <a href="#introduction">Intro</a>
+      <a href="#activity-sequencing">Activity Sequencing</a>
+      <a href="#mandatory-dependency">Mandatory Dependency</a>
+      <a href="#discretionary-dependency">Discretionary Dependency</a>
+      <a href="#external-dependency">External Dependency</a>
+      <a href="#internal-dependency">Internal Dependency</a>
+      <a href="#visualize-dependencies">How Do I Visualize All These Dependencies?</a>
+      <a href="#network-diagrams">Network Diagrams</a>
+      <a href="#arrow-diagram-method">Arrow Diagram Method</a>
+      <a href="#precedence-diagram-method">Precedence Diagram Method</a>
+      <a href="#wrap-up">Wrap-Up</a>
+      <a href="#sources">Sources</a>
+      <h2 id="introduction">Introduction</h2>
+      <p>
+        Regardless of whether you’ve previously managed a project, or simply collaborated on a personal project with a team,
+        you’ve likely been subjected to some form of project schedule management;
+        for something as simple as performing surveys and gathering results, most activities can be accomplished asynchronously.
+        That is, each group member can separately survey different demographics without having to wait for other group members to complete the surveying process.
+        However, the dissection and analysis of this information is contingent upon all group members having surveyed their respective demographics.
+        Within a complex project infrastructure, many project managers may become trapped in a rabbit hole of interdependencies,
+        and this complexity can make it incredibly difficult to create a logical project schedule. 
+      </p>
+      <h2 id="activity-sequencing">Activity Sequencing</h2>
+      <p>
+        After the project team has assembled a list of the activities that must be completed in
+        order to properly realize the project, the next step is to figure out how to properly
+        sequence each of them in the grand scheme. The relationships among the web of project 
+        activities will serve as a cornerstone for this sequence, and understanding how these
+        different dependencies play a role in your projects will undoubtedly make or break your
+        project schedule, since some will require certain features to be fully developed before
+        another project activity may begin, and others can allow for asynchronous development
+        between two or more activities.
+      </p>
+      <h2 id="mandatory-dependency">Mandatory Dependency</h2>
+      <p>
+        Mandatory dependencies, commonly known as hard logic, are generally required in order
+        to satisfy legal and contractual obligations; essentially, these dependencies require
+        a rigid, synchronous sequence in which one activity is directly dependent on another,
+        and may not begin until the team completes that required task. 
+      </p>
+      <h3>Example of this dependency</h3>
+      <p>
+        An example of a mandatory dependency would be that, in order to begin crash testing a vehicle,
+        the team is required to build a prototype.
+      </p>
+      <h2 id="discretionary-dependency">Discretionary Dependency</h2>
+      <p>
+        Discretionary dependencies, commonly known as soft logic, delve into the land of ambiguity
+        in contrast to the rigid structure of mandatory dependencies. These dependencies accommodate
+        a degree of flexibility for the project team, and the sequence can be structured based on the
+        team’s experience and best practices that could potentially apply to the context of the project environment. 
+      </p>
+      <h3>Example of this dependency</h3>
+      <div>
+        <p>
+          For two separate project activities, it is possible that they can be performed either synchronously
+          or asynchronously, depending on what the team asserts to be the best avenue to follow.
+          For example:
+        </p>
+        <ul>
+          <li>Activity 1: Develop a category system for a blog app</li>
+          <li>Activity 2: Develop a subscription system for a blog app</li>
+        </ul>
+        <p>
+          Ultimately, these categories can be completed in any order, or even concurrently. The team may have 
+          developed similar systems in the past, and may decide that, based on their previous success, it may
+          be the better option to develop a subscriptions system and incorporate it into blog categories;
+          on the other hand, it could be a better idea to make two robust features that don’t necessarily need to directly communicate.
+        </p>
+      </div>
+      <h2 id="external-dependency">External Dependency</h2>
+      <p>
+        External dependencies establish a relationship between project activities and other activities that are not strictly confined
+        to the project’s development; generally, other company branches and organizations will be wholly responsible for these external
+        activities, and the project team is generally not directly involved. 
+      </p>
+      <h3>Example of this dependency</h3>
+      <p>
+        An example of an external dependency between two project activities would be a situation where a project team
+        requires special tools and hardware in order to begin developing software for a new construction robot;
+        the project team itself may not be responsible for the acquisition of this equipment, and the project team’s
+        development phases can not commence until the external organization has procured and provided it. 
+      </p>
+      <h2 id="internal-dependency">Internal Dependency</h2>
+      <p>
+        Internal dependencies are effectively relationships between two activities that are necessarily bound to the project’s context and the
+        project team; these are not contingent on any external factors.
+      </p>
+      <h3>Example of this dependency</h3>
+      <p>
+        An example of an internal dependency could simply relate to the phases of the development cycle,
+        wherein a feature must be developed before test cases can be written for it (or the other way around for test-driven development).
+      </p>
+      <h2 id="visualize-dependencies">How do I Visualize All These Dependencies?</h2>
+      <p>
+        As you have seen, there are several common dependencies present in project infrastructures,
+        and when you take all project activities into consideration, a cumbersome, nearly incomprehensible web of dependencies.
+        Surely, there must be a way to map these dependencies to help visualize these interrelationships!
+      </p>
+      <h2 id="network-diagrams">Network Diagrams</h2>
+      <p>
+        One of the most frequently used methods of mapping project activity dependencies is a network diagram. These diagrams explicitly show every project activity and their corresponding relationships with one another, depicting information that allows project managers and teams to determine not only the optimal sequence of activities, but also the duration that each activity may take to complete, allowing teams to more easily create a tentative schedule for the project. There are innumerable forms that network diagrams may adopt, but the most important ones in a project management context are the Arrow Diagram Method (ADM) and the Precedence Diagram Method (PDM).
+      </p>
+      <h3 id="arrow-diagram-method">Arrow Diagram Method</h3>
+      <div>
+        <p>
+          As the name indicates, the ADM creates relationships between activities by drawing arrows to connect different activity nodes, where a node represents a single project activity. The tail of each arrow indicates the start of an activity, and the head signifies completion, with the length of each arrow being proportional to the task’s length. A simple example of an ADM can be seen below in Figure 1.
+        </p>
+        <img src='../images/adm.png'>
+      </div>
+      <h3>Advantages of this Method</h3>
+      <p>
+        ADMs are relatively simple to create and can be understood by the entire project team due to its easily digestible format and minimalistic nature.</p>
+      <h3>Disadvantages of this Method</h3>
+      <p>
+        ADMs only support what is known as a “finish-to-start” relationship between nodes, meaning that a rigid sequence exists between dependencies. This provides very little flexibility for more complex project schedules and structures.
+      </p>  
+      <h3 id="precedence-diagram-method">Precedence Diagram Method</h3>
+      <div>
+        <p>
+          PDMs accommodate much more complex project structures; while they still use the node/arrow format of ADMs, these arrows can support a plethora of relationships:
+        </p>
+        <ul class="article-list">
+          <li>Finish-to-Start
+            <ul>
+              <li>Indicates a strict, synchronous relationship between tasks</li>
+            </ul>
+          </li>
+          <li>Start-to-Finish
+            <ul>
+              <li>Indicates a relationship where one task cannot begin until the other task starts</li>
+            </ul>
+          </li>
+          <li>Start-to-Start
+            <ul>
+              <li>Indicates a relationship where one task can only begin once the other does</li>
+              <li>Can technically begin both simultaneously, though not required</li>
+            </ul>
+          </li>
+          <li>Finish-to-Finish
+            <ul>
+              <li>Indicates a relationship where one task cannot be completed until the other task is completed</li>
+            </ul>
+          </li>
+        </ul>
+        <p>An example of a basic PDM model can be seen below in Figure 2.</p>
+        <img src='../images/pdm.png'>
+        Figure 2.
+      </div>
+      <p>The shifts in line direction indicate the non-linear format of every relationship besides finish-to-start and how delays may potentially occur between two tasks.</p>
+      <h3>Advantages of this method</h3>
+      <p>
+        Because PDMs can portray more complex relationships between tasks, project teams can have a more detailed understanding of how delays involved in the completion of a particular task can affect the grand scheme of the project, based on future dependencies and their corresponding relationships, providing a much more accurate picture of the overarching project schedule.
+      </p>
+      <h3>Disadvantages of this method</h3>
+      <p>
+        The main disadvantage of using PDMs is that they lack the simplicity and minimalistic appeal of ADMS, and they take a longer amount of time to create and analyze. Ultimately, they can definitely become more difficult to understand.
+      </p>
+      <h2 id="wrap-up">Wrap-Up</h2>
+      <p>
+        In conclusion, it is highly evident that project schedules can become quite difficult to create and maintain as a result of the complexity involved in many software projects. Many different dependencies may exist among project activities, and utilizing network diagrams can provide a cohesive visual model that coalesces all of the project activities and their dependencies into a single chart. Regardless of whether you end up creating an ADM or a PDM, you will indubitably 
+      </p>
+      \
+      <h3 id="sources">Sources:</h3>
+      <a href="https://cacoo.com/blog/use-network-diagrams-project-management/">https://cacoo.com/blog/use-network-diagrams-project-management/</a>
+      <span>Schwalbe, Kathy. Information Technology Project Management. 9th ed., Cengage, 2019.</span>
+      <a href="https://www.wrike.com/project-management-guide/faq/what-is-a-network-diagram-in-project-management/">https://www.wrike.com/project-management-guide/faq/what-is-a-network-diagram-in-project-management/</a>
+      <a href="https://www.pmbypm.com/4-types-of-project-dependencies/">https://www.pmbypm.com/4-types-of-project-dependencies/</a>
+    </main>
+  </body>
+</html>

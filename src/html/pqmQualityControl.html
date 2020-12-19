@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/main-style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>In Good Taste - A Project Management Primer</title>
+  </head>
+  <body>
+    <div class="horiz" id="topNav">
+      <div id="logo-banner">
+        <img class="logo" src="../images/goodtastelogo2.png" />
+      </div>
+      <ul>
+        <li><a class="active" href="/">Home</a></li>
+        <li><a href="/">About</a></li>
+        <li><a href="/">Table of Contents</a></li>
+        <li>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()"
+            ><i class="fa fa-bars"></i
+          ></a>
+        </li>
+      </ul>
+    </div>
+    <div class="vert hide" id="topNav-vert">
+      <ul>
+        <li><a class="active" href="./index.html">Home</a></li>
+      </ul>
+    </div>
+
+    <main class="article-main">
+      <h1>Project Quality Management: Keeping it Under Control</h1>
+      <h2>Table of Contents</h2>
+      <a href="#introduction">Intro</a>
+      <a href="#acceptance-decisions">Acceptance Decisions</a>
+      <a href="#rework">Rework</a>
+      <a href="#process-adjustments">Process Adjustments</a>
+      <a href="#tools-and-techniques">Tools and Techniques for Quality Control</a>
+      <a href="#cause-and-effect">Cause-and-Effect Diagrams</a>
+      <a href="#control-charts">Control Charts</a>
+      <a href="#pareto-charts">Pareto Charts</a>
+      <a href="#wrap-up">Wrap-Up</a>
+      <a href="#sources">Sources</a>
+      
+      <h2 id="introduction">Introduction</h2>
+      <p>
+        When developing your professional products and projects, it is almost certain that, as a project manager, you have been responsible for controlling the quality of your products. Many might unknowingly conflate quality control with quality management, but the two are separate beasts that you must conquer throughout development. You might be asking yourself, “what is the purpose of quality control?” Well, there are several primary goals exclusive to it, including acceptance decisions, rework, and process adjustments.
+      </p>
+      <h2 id="acceptance-decisions">Acceptance Decisions</h2>
+      <p>
+        As you develop your products and steer the wheel of your team’s ship, there are numerous decisions you’ll be making; in the context of quality control, acceptance decisions pertain to the decisions of stakeholders to either accept or reject certain project deliverables, such as features or components. This decision should be leveraged as a form of constructive criticism that can guide the team in a certain direction. If a set of related features are accepted, it is probable that those features are not lacking in the expected degree of quality, while the contrary stands true for rejected deliverables. If a deliverable or set of features end up being rejected by stakeholders, this allows the team to shift momentum and rework those features to uphold the desired level of excellence. 
+      </p>
+      <h2 id="rework">Rework</h2>
+      <p>
+        As indicated in the previous section, rework pertains to the actions that a team must take to refactor and possibly redesign the rejected component based on stakeholders’ feedback that will ensure a team can modify it in such a way that it complies with feature specifications, project specifications, and user/stakeholder expectations. Unfortunately, having to waste an inordinate amount of time reworking deliverables from a previous sprint allocate time away that would have been spent on prospective features, meaning that it’s essential that quality is upheld in a manner that minimizes the amount of rework to which a team must commit. 
+      </p>
+      <h2 id="process-adjustments">Process Adjustments</h2>
+      <p>
+        Process adjustments refer to immediate adjustments that are made to a project/product’s features based on established quality control measurements that can be obtained from a variety of techniques and tools mentioned in the following sections. Process adjustments generally entail modifying process assets and even the project management plan itself, by needing to annex external equipment/tools into the development environment in order to effectively resolve certain issues. One positive outcome of process adjustments, however, is the fact that it can not only mitigate present issues but potentially future issues that could arise on the current development path.  
+      </p>
+      <h2 id="tools-and-techniques">Tools and Techniques for Quality Control</h2>
+      <p>
+        Given the numerous features that your team may be concurrently developing for a project, it is certainly possible that improper quality control may obstruct the path to creating a high-quality product that your stakeholders want and rightfully deserve. If you are not the most experienced project manager, you are likely oblivious to many of the tools and techniques that can facilitate quality control. While countless tools exist, some helpful ones include cause-and-effect diagrams, control charts and Pareto charts.
+      </p>
+      <h2 id="cause-and-effect">Cause-and-Effect Diagrams</h2>
+      <p>
+        Cause-and-effect diagrams, also called fishbone diagrams, follow a simple ideology: for every problem that arises, there exists a multitude of potential root causes; by assessing the problem and the context in which it exists, you are then able to pinpoint the primary culprit and then make amends accordingly. For example, a potential problem that a stakeholder would reveal might be “unsatisfactory resource loading times” for a particular page of a new web application your team is developing. Once this problem has been identified, you can draw the problem in a box with an arrow pointing toward it; along the arrow, you will list various attributes into categories that represent potential root causes for the problem, and each cause would point to the main arrow;  in this case, “poor loading times on page X” could go inside the problem box. Some problem categories might be software and hardware. Software related issues might be slow internet speed or inefficient system algorithms, and hardware related issues could include the user’s processor being too slow to quickly load the web application page. Once your diagram is set up, you can then meticulously analyze each problem set in order to ultimately determine the primary root cause so it can be targeted and resolved. A simple example of a cause-and-effect diagram can be seen below in Figure 1.  
+      </p>
+      <h2 id="control-charts">Control Charts</h2>
+      <p>
+        Control charts display various statistics pertaining to a certain process and analyzing the variation in these statistics can indicate whether or not a project/product development process is under control or not. If variations are determined to be the result of minor, random causes, then a process is considered to be under control and no action needs to be taken; on the other hand, if these statistical variations are the result of possibly drastic, unexpected events, measures must be taken to modify the process in a way that allows it to regain control. Control charts can be utilized to determine potential variations in cost allocations, projected schedules, and other management-related issues arise in a process. A rule to abide by would be the “seven run rule,” which states that seven consecutive data points being all above or all below the mean may indicate that the variation and its causes should be investigated. 
+      </p>
+      <h2 id="pareto-charts">Pareto Charts</h2>
+      <p>
+        A Pareto chart is a type of histogram that orders various problem points by the frequency of how many complaints are received pertaining to each problem; this allows a project team to identify the most problematic issues present in a project feature or deliverable so that corrective action can be taken to alleviate said problems and potentially prevent similar issues in the future by targeting a development paradigm that conceived the most notable defects. An example of a Pareto chart can be seen below in Figure 2.
+      </p>
+      <p>
+        In this Pareto chart, the first four problems are the most significant issues, and the organization should strive to mitigate these problems to improve customer relations. The same should certainly apply to your professional projects!
+      </p>
+      <h2 id="wrap-up">Wrap-Up</h2>
+      <p>
+        In conclusion, it’s evident that properly controlling the quality of your project features and processes can appear to be an insurmountable precipice; however, countless tools can be leveraged in order to target problems as they arise, and also fortify your project against future problems as you modify your project’s infrastructure and development approaches. Cause-and-effect diagrams, control charts and Pareto charts are all indispensable tools, but there are many other techniques available so that you can ultimately succeed in providing a top-quality product for your consumers. 
+      </p>
+      <h3 id="sources">Sources:</h3>
+      <a href="https://www.softwareresearch.net/fileadmin/src/docs/teaching/SS06/PM/PMBOK8.pdf">https://www.softwareresearch.net/fileadmin/src/docs/teaching/SS06/PM/PMBOK8.pdf</a>
+      <p>Schwalbe, Kathy. Information Technology Project Management. 9th ed., Cengage, 2019.</p>
+      <a href="https://whatis.techtarget.com/definition/Pareto-chart-Pareto-distribution-diagram">https://whatis.techtarget.com/definition/Pareto-chart-Pareto-distribution-diagram</a>
+    </main>
+  </body>
+</html>
